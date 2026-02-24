@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
@@ -37,7 +37,7 @@ public class EnemyAI : MonoBehaviour
             // Attack cooldown
             if (Time.time >= lastAttackTime + attackCooldown)
             {
-                AttackPlayer();
+                ;
                 lastAttackTime = Time.time;
             }
         }
@@ -51,14 +51,7 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    void AttackPlayer()
-    {
-        // Call Die() on player
-        PlayerDeath death = player.GetComponent<PlayerDeath>();
-        if (death != null)
-        {
-            death.Die();
-        }
-    }
+
 }
+
 

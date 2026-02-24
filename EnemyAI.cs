@@ -6,8 +6,8 @@ public class EnemyAI : MonoBehaviour
     [Header("Enemy Settings")]
     public Transform player;
     public float chaseDistance = 10f;
-    public float attackDistance = 2f;
-    public float attackCooldown = 1.5f;
+    private float attackDistance = 2f;
+    private float attackCooldown = 1.5f;
 
     private NavMeshAgent agent;
     private float lastAttackTime;
@@ -61,3 +61,4 @@ public class EnemyAI : MonoBehaviour
         }
     }
 }
+
